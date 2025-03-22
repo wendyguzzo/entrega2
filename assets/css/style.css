@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 244, 235);
+    color: #333;
+}
+
+header {
+    background-color: rgb(162, 34, 5);
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: rgb(162, 34, 5);
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+
+nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.titulos, h5 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.d-flex {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalogo article {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+   
+}
+
+
+
+.catalogo img {
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+
+.catalogo p {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: rgb(162, 34, 5);
+    border-color: beige;
+    color: white;
+    padding: 10px 15px;
+  
+}
+
+.btn:hover {
+    background-color: black
+}
+
+footer {
+    background-color: rgb(162, 34, 5);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.formulario {
+    background-color: rgb(197, 191, 191);
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Movil */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .titulos h2 {
+        font-size: 1.5rem;
+    }
+
+    form input, form select, form textarea {
+        font-size: 1rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .titulos h2 {
+        font-size: 1.8rem;
+    }
+
+    form input, form select, form textarea {
+        font-size: 1.1rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1.1rem;
+    }
+}
